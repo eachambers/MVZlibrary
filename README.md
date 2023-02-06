@@ -1,10 +1,12 @@
 # MVZ library color palettes
 
-The Grinnell Miller library at the Museum of Vertebrate Zoology at UC Berkeley contains an impressive collection of XXX
+<img align="center" src="https://github.com/eachambers/MVZlibrary/blob/main/photos/library_images.png" width=800>
 
-Over my time at UC Berkeley, during MVZ lunch seminars, I would often enjoy looking over the books in the library and spent time admiring them, their spines worn over time into a collection of faded, but rather lovely, colors.
+The Grinnell Miller library at the [Museum of Vertebrate Zoology](https://mvz.berkeley.edu/) at UC Berkeley contains an impressive collection of historical books, including biologists' field notes (dating back to TODO!), as well as textbooks, bound journals, etc.
 
-### Installation
+During MVZ weekly seminars which take place in the library, I would often admire the books surrounding me, their spines worn over time into a collection of faded, but rather lovely, colors. I had the thought that these colors might be fun to develop an R color palette with.
+
+## Installation
 
 The MVZlibrary package is only available on Github, and so must be installed using the `devtools` package. To do so:
 
@@ -12,79 +14,83 @@ The MVZlibrary package is only available on Github, and so must be installed usi
 devtools::install_github("eachambers/MVZlibrary")
 ```
 
-### Usage
+## Usage
 
 ```{r usage}
+# Load library
 library(MVZlibrary)
 
 # See all available palettes
-names(MVZ_palette)
+names(MVZ_palettes)
 ```
 
-### Palettes
+## Palettes
 
-In total, there are TODO palettes available in the `MVZlibrary` package. TODO are qualitative, TODO are diverging, and TODO are monochromatic. You can have the package tell you which is which using the `MVZ_types()` function. For example:
+In total, there are seven palettes available in the `MVZlibrary` package. Three are qualitative, two are diverging, and two are monochromatic. You can have the package tell you which is which using the `MVZ_types()` function. For example:
 
 ```{r palette types}
+# See all available diverging palettes
 MVZ_types("diverging")
 ```
 
-#### Life Histories
+### Natural History
 
-Life Histories is a diverging palette, inspired by TODO
+Natural History is a qualitative palette TODO
 
-```{r}
-MVZ_palette("LifeHistories")
-```
-
-#### Field notes
-
-The MVZ has many bound field notes from notable biologists who have spent time there, including TODO. These field notes, although handwritten, are bound and in TODO. Field Notes is a qualitative palette with seven colors.
-
-```{r}
-MVZ_palette("FieldNotes")
-```
-
-#### Ensatina
-
-Ensatina is a monochromatic scale palette. Its inspiration is the well-known (in the herpetology world, at least!) salamander that ranges from British Columbia, along the coastal U.S. states, and down into Baja. This genus was made famous by the late Dave Wake, curator of the MVZ. Dr. Wake spent much of his career researching this charismatic group of salamanders.
-
-```{r}
-MVZ_palette("Ensatina")
-```
-
-#### The Auk
-
-The MVZ library has an impressive collection of bound copies of the journal The Auk, dating from around TODO. The Auk palette is a diverging one.
-
-```{r}
-MVZ_palette("TheAuk")
-```
-
-#### Zoology
-
-Zoology is a monochromatic palette.
-
-```{r}
-MVZ_palette("Zoology")
-```
-
-#### Natural History
-
-```{r}
+```{r nat hist}
 MVZ_palette("NaturalHistory")
 ```
 
-#### Western Birds
+### Life Histories
 
-```{r}
+Life Histories is a diverging palette, inspired by TODO
+
+```{r life hist}
+MVZ_palette("LifeHistories")
+```
+
+### The Auk
+
+The MVZ library has an impressive collection of bound copies of the journal [The Auk](TODO), dating back to around TODO. The Auk palette is diverging, ranging from deep blues to warm maroons.
+
+```{r auk}
+MVZ_palette("TheAuk")
+```
+
+### Zoology
+
+TODO Zoology is a monochromatic palette in browns and tans.
+
+```{r zool}
+MVZ_palette("Zoology")
+```
+
+### Field notes
+
+The MVZ has many historical hand-written field notes from notable biologists which have been bound and live in wooden display cases, and this palette mimics the colors both of the wood and the bound notes themselves. Field Notes is a qualitative palette with seven colors.
+
+```{r field notes}
+MVZ_palette("FieldNotes")
+```
+
+### Ensatina
+
+Ensatina is a monochromatic scale palette. Its inspiration is the well-known (in the herpetology world, at least!) salamander that ranges from British Columbia, along the coastal U.S. states, and down into Baja. This genus was made famous by the late Dave Wake, curator of the MVZ. Dr. Wake spent much of his career researching this group of salamanders. Coincidentally, many of the books in the MVZ library have colors that remind me of this charismatic little animal.
+
+```{r ensatina}
+MVZ_palette("Ensatina")
+```
+
+### Western Birds
+
+```{r west birds}
 MVZ_palette("WesternBirds")
 ```
 
-### Examples
+## Examples
 
 Below are some examples of the `MVZlibrary` palettes. As you can see, you can adapt these palettes for use in `ggplot2()` using TODO functions.
 
-### Acknowledgements
+## Acknowledgements
 
 Much of my code, and the general structure of this package, was inspired by the `wesanderson` package developed by Karthik Ram (find it [here](https://github.com/karthik/wesanderson)), and the `NatParksPalettes` package developed by Kevin Blake (find it [here](https://github.com/kevinsblake/NatParksPalettes)). For advice on use of color in data visualization, I highly recommend the wonderful, and fully open access, *Fundamentals of Data Visualization* textbook by Claus Wilke, available online [here](https://clauswilke.com/dataviz/).
