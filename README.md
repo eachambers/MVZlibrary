@@ -59,6 +59,8 @@ MVZ_palette("TheAuk")
 
 ### Zoology
 
+<img src="photos/Zoology.jpeg" align="right" height="120"/>
+
 TODO Zoology is a monochromatic palette in browns and tans.
 
 ```{r zool}
@@ -74,6 +76,8 @@ MVZ_palette("FieldNotes")
 ```
 
 ### Ensatina
+
+<img src="photos/Ensatina.jpg" align="left" height="120"/>
 
 Ensatina is a monochromatic scale palette. Its inspiration is the well-known (in the herpetology world, at least!) salamander that ranges from British Columbia, along the coastal U.S. states, and down into Baja. This genus was made famous by the late Dave Wake, curator of the MVZ. Dr. Wake spent much of his career researching this group of salamanders. Coincidentally, many of the books in the MVZ library have colors that remind me of this charismatic little animal.
 
