@@ -1,6 +1,6 @@
 # MVZ library color palettes
 
-<img src="photos/library_images.png" align="center" height="300"/>
+<img src="photos/library_images.png" align="center" height="400"/>
 
 The Grinnell Miller library at the [Museum of Vertebrate Zoology](https://mvz.berkeley.edu/) at UC Berkeley contains an impressive collection of historical books, including biologists' field notes (dating back to TODO!), as well as textbooks, bound journals, etc.
 
