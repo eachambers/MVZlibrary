@@ -6,6 +6,8 @@ The Grinnell Miller library at the [Museum of Vertebrate Zoology](https://mvz.be
 
 During MVZ weekly seminars which take place in the library, I would often admire the books surrounding me, their spines worn over time into a collection of faded, but rather lovely, colors. I had the thought that these colors might be fun to develop an R color palette with.
 
+"Oh, so a color palette based on a bunch of dusty old books?" - Erik Enbody
+
 ## Installation
 
 The MVZlibrary package is only available on Github, and so must be installed using the `devtools` package. To do so:
