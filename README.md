@@ -6,8 +6,6 @@ The Grinnell Miller library at the [Museum of Vertebrate Zoology](https://mvz.be
 
 During MVZ weekly seminars which take place in the library, I would often admire the books surrounding me, their spines worn over time into a collection of faded, but rather lovely, colors. I had the thought that these colors might be fun to develop an R color palette with.
 
-"Oh, so a color palette based on a bunch of dusty old books?" - Erik Enbody
-
 ## Installation
 
 The MVZlibrary package is only available on Github, and so must be installed using the `devtools` package. To do so:
@@ -100,3 +98,7 @@ Below are some examples of the `MVZlibrary` palettes. As you can see, you can ad
 ## Acknowledgements
 
 Much of my code, and the general structure of this package, was inspired by the `wesanderson` package developed by Karthik Ram (find it [here](https://github.com/karthik/wesanderson)), and the `NatParksPalettes` package developed by Kevin Blake (find it [here](https://github.com/kevinsblake/NatParksPalettes)). For advice on use of color in data visualization, I highly recommend the wonderful, and fully open access, *Fundamentals of Data Visualization* textbook by Claus Wilke, available online [here](https://clauswilke.com/dataviz/).
+
+## Rave reviews
+
+"Oh, so a color palette based on a bunch of dusty old books?" - Erik Enbody
