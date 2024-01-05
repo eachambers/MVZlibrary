@@ -56,7 +56,7 @@ MVZ_palette <- function(name, n, type = c("discrete", "continuous")) {
 #'
 #' @return prints types of palettes
 #' @export
-#' #' @examples
+#' @examples
 #' MVZ_type(name = "NaturalHistory")
 #'
 MVZ_type <- function(name = "all") {
