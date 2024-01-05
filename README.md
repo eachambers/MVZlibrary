@@ -59,7 +59,7 @@ MVZ_type("diverging")
 
 ### Field notes
 
-The MVZ has many historical hand-written field notes from notable
+The MVZ has many historical handwritten field notes from notable
 biologists which have been bound and live in wooden display cases, and
 this palette mimics the colors both of the wood and the bound notes
 themselves. Field Notes is a qualitative palette with seven colors.
