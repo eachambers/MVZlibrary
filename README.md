@@ -40,6 +40,15 @@ theme_set(theme_cowplot())
 names(MVZ_palettes)
 #> [1] "NaturalHistory" "LifeHistories"  "theAuk"         "Zoology"       
 #> [5] "FieldNotes"     "Ensatina"       "WesternBirds"
+
+# See whether palette is colorblind friendly
+library(colorblindcheck)
+MVZ_cb("LifeHistories")
+#>           name n tolerance ncp ndcp  min_dist mean_dist max_dist
+#> 1       normal 7  11.65306  21   21 11.653063  30.72324 48.19523
+#> 2 deuteranopia 7  11.65306  21   20  7.991902  25.95144 46.11145
+#> 3   protanopia 7  11.65306  21   19  9.389066  24.70057 41.52459
+#> 4   tritanopia 7  11.65306  21   19 10.551762  34.41582 56.67166
 ```
 
 ## Palettes

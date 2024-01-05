@@ -42,6 +42,10 @@ theme_set(theme_cowplot())
 
 # See all available palettes
 names(MVZ_palettes)
+
+# See whether palette is colorblind friendly
+library(colorblindcheck)
+MVZ_cb("LifeHistories")
 ```
 
 ## Palettes
@@ -59,7 +63,7 @@ MVZ_type("diverging")
 
 The MVZ has many historical handwritten field notes from notable biologists which have been bound and live in wooden display cases, and this palette mimics the colors both of the wood and the bound notes themselves. Field Notes is a qualitative palette with seven colors.
 
-```{r field notes, fig.width=2, fig.height=0.75}
+```{r field notes, fig.width=3, fig.height=1}
 MVZ_palette("FieldNotes")
 ```
 
