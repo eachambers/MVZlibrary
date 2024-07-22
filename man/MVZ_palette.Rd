@@ -7,7 +7,7 @@
 MVZ_palette(name, n, type = c("discrete", "continuous"))
 }
 \arguments{
-\item{name}{name of palette. Options are: \code{"NaturalHistory"}, \code{"LifeHistories"}, \code{"theAuk"}, \code{"Zoology"}, \code{"FieldNotes"}, \code{"Ensatina"}, \code{"WesternBirds"}}
+\item{name}{name of palette. Options are: \code{"NaturalHistory"}, \code{"LifeHistories"}, \code{"theAuk"}, \code{"Zoology"}, \code{"FieldNotes"}, \code{"Ensatina"}, \code{"WesternBirds"}.}
 
 \item{n}{number of desired colors in palette; defaults to all colors in given palette.}
 

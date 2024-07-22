@@ -17,7 +17,7 @@ MVZ_palettes <- list(
 #'
 #' This function is largely adapted from the `wes_palette()` function in the [wesanderson](https://github.com/karthik/wesanderson/tree/master) package.
 #'
-#' @param name name of palette. Options are: `"NaturalHistory"`, `"LifeHistories"`, `"theAuk"`, `"Zoology"`, `"FieldNotes"`, `"Ensatina"`, `"WesternBirds"`
+#' @param name name of palette. Options are: `"NaturalHistory"`, `"LifeHistories"`, `"theAuk"`, `"Zoology"`, `"FieldNotes"`, `"Ensatina"`, `"WesternBirds"`.
 #' @param n number of desired colors in palette; defaults to all colors in given palette.
 #' @param type either `"continuous"` or `"discrete"` (default). Using `"continuous"` will automatically interpolate between colors.
 #' @importFrom graphics rect par image text
@@ -43,11 +43,33 @@ MVZ_palette <- function(name, n, type = c("discrete", "continuous")) {
     stop("There aren't enough colors in the selected palette!")
   }
 
+  if (type == "discrete" && n < length(pal)) {
+    pal <- largest_dist_helper(pal, n)
+  }
+
   out <- switch(type,
                 continuous = grDevices::colorRampPalette(pal)(n),
                 discrete = pal[1:n]
   )
   structure(out, class = "palette", name = name)
+}
+
+#' If n colors in palette are fewer than total palette length, select those colors that maximize distance
+#'
+#' @param pal color palette values.
+#' @param n number of desired colors in palette; defaults to all colors in given palette.
+#'
+#' @return list of colors to keep in palette of n length
+#' @export
+largest_dist_helper <- function(pal, n) {
+  colors_to_keep <- data.frame(colorblindcheck::palette_dist(pal)) %>%
+    dplyr::slice(1) %>%
+    `colnames<-`(pal) %>%
+    tidyr::pivot_longer(cols = 1:length(pal), names_to = "color", values_to = "col_dist") %>%
+    dplyr::slice_min(col_dist, n = n) %>%
+    pull(color)
+
+  return(colors_to_keep)
 }
 
 #' List whether palette is qualitative, diverging, or monochromatic
