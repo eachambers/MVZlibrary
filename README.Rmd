@@ -135,6 +135,16 @@ pal <- MVZ_palette("LifeHistories", 100, type = "continuous")
 heatmap(as.matrix(mtcars), col = pal)
 ```
 
+## As seen in these publications
+
+[Distinguishing species boundaries from intraspecific geographic variation](https://www.pnas.org/doi/full/10.1073/pnas.2423688122). PNAS, 2025.
+
+<img src="photos/Fig1_Pooled_trees.jpeg" align="center" height="500"/>
+**Figure 1 used a combination of the WesternBirds and NaturalHistory palettes.**
+
+<img src="photos/FigS3_biogeo.png" align="center" height="500"/>
+**Figure S3 used the LifeHistories palette to illustrate the elevational profile of Mexico.**
+
 ## Acknowledgements
 
 ------------------------------------------------------------------------
